@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function creerTableau(N){
+            tableau = []
+            for(let i=0;i<N;i++){
+                tableau.push(Math.floor(Math.random()*20))
+            }
+            return tableau
+        }
+        function calculerMoyenne(a){
+            let moyenne = 0
+            for(let i=0;i<a.length;i++){
+                moyenne += a[i]/a.length
+
+                if(a[i]>10){
+                    document.write(a[i])
+                    document.write("<br>")
+                }
+            }
+            return moyenne
+        }
+        let table = creerTableau(10);
+        console.table(tableau)
+
+        moy = calculerMoyenne(table)
+        console.log(moy);
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<button id="btn-1">Commencer le jeu</button>
+<body>
+    
+    <script>
+    btn = document.getElementById("btn-1")
+/*----------------------------------------------*/
+
+
+    btn.addEventListener("click", function(){
+    
+        let nombreAleatoire = Math.floor(Math.random()*99)
+    console.log(nombreAleatoire);
+
+    let nombreChoisi = prompt("Entrez un nombre entre 0 et 99")
+    console.log(nombreChoisi);
+    let i=1
+
+    while(parseFloat(nombreChoisi) != nombreAleatoire){
+        alert("Nombre faux")
+        i++
+        let nombreChoisi = prompt("Entrez un nombre entre 0 et 99")
+        if(nombreAleatoire == parseFloat(nombreChoisi)){
+        alert("Bravo "+i+" essais")
+        return
+    }
+        if(nombreChoisi === null){
+            return
+        }
+    }
+    if(nombreAleatoire == parseFloat(nombreChoisi)){
+        alert("Bravo "+i+" essais")
+        return
+    }
+
+}
+
+    )
+
+    </script>
+</body>
+</html>

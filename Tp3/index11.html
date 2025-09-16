@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcul(a,b,c,d,e,f){
+            let moyenne = 0
+            for(let i=0;i<arguments.length;i++){
+                moyenne += arguments[i]/arguments.length
+                
+            }
+            console.log(moyenne);
+            return moyenne
+        }
+        calcul(20,15,16,15,12)
+    </script>
+</body>
+</html>

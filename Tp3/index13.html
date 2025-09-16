@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function maximum(a,b){
+            max = Math.max(a,b)
+            return max
+        }
+        function minimum(a,b){
+            min = Math.min(a,b)
+            return min
+        }
+
+        maximum(30,20)
+        console.log(max);
+        minimum(90,80)
+        console.log(min);
+
+        autre = maximum(maximum(30,20),maximum(90,80))
+        console.log(autre);
+        autre2 = minimum(minimum(30,20),minimum(90,80))
+        console.log(autre2);
+    </script>
+</body>
+</html>

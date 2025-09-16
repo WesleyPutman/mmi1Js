@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Somme = 56;
+        let b10 = 0;
+        let b5 = 0;
+        let p2 = 0;
+        let p1 = 0;
+
+        while(Somme>=10){
+            Somme -= 10;
+            b10++;
+        }
+    console.log("Nombre de billets de 10: "+b10);
+    console.log("Somme restante: "+Somme);
+        while(Somme>=5){
+            Somme -= 5;
+            b5++;
+        }
+    console.log("Nombre de billets de 10: "+b5);
+    console.log("Somme restante: "+Somme);
+        while(Somme>=2){
+            Somme -= 2;
+            p2++;
+        }
+    console.log("Nombre de billets de 10: "+p2);
+    console.log("Somme restante: "+Somme);
+        while(Somme>=1){
+            Somme -= 1;
+            p1++;
+        }
+    console.log("Nombre de billets de 10: "+p1);
+    console.log("Somme restante: "+Somme);
+
+    console.log("10€: "+b10+"  5€: "+b5+"  2€: "+p2+"  1€: "+p1);
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table,tr,td{
+            border: solid 1px black;
+        }
+    </style>
+    <script>
+        let table = []
+        table["Amande"]=["30","automne"]
+        table["Fraise"]=["9","Printemps"]
+        table["Cerise"]=["25","Ete"]
+
+        console.table(table)
+
+        function deplace(){
+            document.write("<table>")
+            for(let code in table){
+
+                document.write("<tr></tr>")
+                document.write("<td>"+code+"</td>")
+                for(let infos in table[code]){
+
+                    document.write("<td>"+table[code][infos] +"</td>")
+                }
+            }
+        }
+        deplace(table)
+    </script>
+</body>
+</html>

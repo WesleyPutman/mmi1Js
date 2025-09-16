@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function minimum(a,b){
+            if(a>b){
+                return [b,a]
+            }else{
+                return [a,b]
+            }
+        }
+        function maximum(a,b){
+            if(a>b){
+                return [a,b]
+            }else{
+                return [b,a]
+            }
+        }
+       let [nombreMini1, nombreMax1] = minimum(125,80)
+       let [nombreMax2, nombreMini2] = maximum(90,60)
+        console.log(nombreMini1);
+        console.log(nombreMax2);
+
+        if(nombreMini1>nombreMini2){
+            console.log("Le nombre minimum entre les 4 réels est: "+ nombreMini2);
+        }else{
+            console.log("Le nombre minimum entre les 4 réels est: "+ nombreMini1);
+        }
+        if(nombreMax1>nombreMax2){
+            console.log("Le nombre maximum entre les 4 réels est: "+ nombreMax1);
+        }else{
+            console.log("Le nombre maximum entre les 4 réels est: "+ nombreMax2);
+        }
+
+        /*
+        autre = minimum(minimum(125,80), minimum(90,60));
+        console.log(autre);
+
+        // A utiliser pour plus de facilité sans utiliser les valeurs a et b dans les fonctions
+        tablaux 
+        */
+
+    </script>
+</body>
+</html>

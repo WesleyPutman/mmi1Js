@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Bissextile(a){
+            let resultat = false;
+            if(Number.isInteger(a/4)){
+                if(Number.isInteger(a/100)){
+                    if(Number.isInteger(a/400)){
+                        resultat = true;
+                    }else{
+                        resultat = false;
+                    }
+                }else{
+                    resultat = true;
+                }
+            }else{
+                resultat = false;
+            }
+            return resultat;
+        }
+
+        
+        console.log(Bissextile(1900));
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <style>
+        table,td,tr,th{
+            border: solid 1px black;
+        }
+    </style>
+    <script>
+        let personnes = [] ;
+            personnes['mdupond'] = []
+            personnes['mdupond'] ['prenom'] = 'Martin' ;
+            personnes['mdupond'] ['nom'] = 'Dupond' ;
+            personnes['mdupond'] ['age'] = 25;
+            personnes['mdupond'] ['ville'] = 'Paris' ;
+            personnes['jm'] = []
+            personnes['jm'] ['prenom'] = 'Jean' ;
+            personnes['jm'] ['nom'] = 'Martin' ;
+            personnes['jm'] ['age'] = 20;
+            personnes['jm'] ['ville'] = 'Rouen' ;
+            personnes['toto'] = []
+            personnes['toto'] ['prenom'] = 'Tom' ;
+            personnes['toto'] ['nom'] = 'Tonge' ;
+            personnes['toto'] ['age'] = 18;
+            personnes['toto'] ['ville'] = 'Elbeuf' ;
+            personnes['tot'] = []
+            personnes['tot'] ['prenom'] = 'Tome' ;
+            personnes['tot'] ['nom'] = 'Okna' ;
+            personnes['tot'] ['age'] = 19;
+            personnes['tot'] ['ville'] = 'VDR' ;
+
+            console.table(personnes)
+
+            function deplace(){
+                document.write("<table>")
+                    document.write("<th>"+"Prenom"+"</th>")
+                    document.write("<th>"+"Nom"+"</th>")
+                    document.write("<th>"+"Age"+"</th>")
+                    document.write("<th>"+"Ville"+"</th>")
+                for(let code in personnes){
+                    document.write("<tr>"+"</tr>")
+                    for(let infos in personnes[code]){
+                        document.write("<td>" +personnes[code][infos] +"</td>");
+                    }
+                }
+                document.write("</table>")
+            }
+            deplace()
+    </script>
+</body>
+</html>
